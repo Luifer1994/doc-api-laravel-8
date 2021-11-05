@@ -20,6 +20,7 @@ module.exports = {
             '/introduccion/',
             '/instalacion/',
             '/basedatos/',
+            '/modelos/',
         ]
     },
 
