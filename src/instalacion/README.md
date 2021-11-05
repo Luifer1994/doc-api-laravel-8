@@ -16,11 +16,11 @@ Tenemos 2 formas de crear nuestra aplicación con Composer.
     laravel new mi-api
 </p>
 
-Con esto ya hemos creado nuestra aplicación Laravel y ya la podemos abrir en nuestro editor de codigos;
+Con esto ya hemos creado nuestra aplicación Laravel y ya la podemos abrir en nuestro editor de códigos.
 
 <img :src="$withBase('/img/project.png')">
 
-Para comprobar que todo salio bien abrimos la terminar dentro de nuestro proyecto y escribimos:
+Para comprobar que todo salió bien abrimos la terminar dentro de nuestro proyecto y escribimos:
 <p style="font-family: Verdana; font-size:14pt; color:black">
     php artisan serve
 </p>

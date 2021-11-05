@@ -1,6 +1,6 @@
 # Introducción
 
-### Eta guía le dará un ejemplo de como crear una API Rest con [Laravel 8](https://laravel.com/) y [Passport](https://laravel.com/docs/8.x/passport). 
+### Esta guía le dará un ejemplo de como crear una API Rest con [Laravel 8](https://laravel.com/) y [Passport](https://laravel.com/docs/8.x/passport). 
 
 API es un conjunto de reglas y especificaciones que las aplicaciones pueden seguir para comunicarse entre ellas. Para que lo entendamos, el uso de una API es el mecanismo más útil para conectar dos softwares entre sí, de esta manera, podemos garantizar el intercambio de mensajes o datos en formato estándar.
 
