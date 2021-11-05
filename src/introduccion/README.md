@@ -7,4 +7,4 @@ API es un conjunto de reglas y especificaciones que las aplicaciones pueden segu
 Sin embargo, Laravel proporciona una forma fácil de crear API. 
 Si necesitas autenticación en su aplicación, puede hacerlo fácilmente con Passport, que proporciona una forma de crear un token de autenticación para validar usuarios.
 
-Si también quieres crear Rest API para tu aplicación móvil, entonces puedes seguir este tutorial sobre cómo crear rest api paso a paso con [laravel 8](https://laravel.com/). Si eres nuevo, no te preocupes, escribí el tutorial paso a paso.
+Si también quieres crear Rest API para tu aplicación móvil, entonces puedes seguir este tutorial sobre cómo crear Rest API paso a paso con [laravel 8](https://laravel.com/). Si eres nuevo, no te preocupes, escribí el tutorial paso a paso.

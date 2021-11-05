@@ -17,7 +17,7 @@ Ahora, creamos una nueva base de datos vacía con el nombre que ustedes quieran.
 
 ### Conexión con la base de datos
 
-Es muy fácil establecer la conexión con nuestra base de datos, basta con ubicar el archivo que se crea por defecto con la instalacion de laravel que está en la raíz del proyecto llamado  <b>.env</b> 
+Es muy fácil establecer la conexión con nuestra base de datos, basta con ubicar el archivo que se crea por defecto con la instalación de Laravel que está en la raíz del proyecto llamado  <b>.env</b> 
 
 
 Si no se te creo ese archivo, debe haber uno llamado <b>.env.example</b> el cual le cambiaremos el nombre a solo .env
