@@ -34,3 +34,27 @@ Schema::create('genders', function (Blueprint $table) {
 });
 ```
 Así como estamos asigando al campo name el tipo string hay muchos más tipos, para ver la lista completa entremos [AQUÍ](https://laravel.com/docs/8.x/migrations#available-column-types)
+
+Procederemos con la creación del modelo, migración y factory de mascotas
+
+```
+php artisan make:model Pet -mf
+```
+Esta será la configuración de nuestra migración de mascotas
+```php
+Schema::create('pets', function (Blueprint $table) {
+    $table->id();
+    $table->string('name', 100);
+    $table->integer('age');
+    $table->foreignId('id_gender')->constrained('genders');//Relación con géneros
+    $table->foreignId('id_user')->constrained('users');//Relación con usuarios
+    $table->timestamps();
+});
+
+```
+#### Ejecutar migraciones
+Despues de haber configurado nuestras tablas en las migraciones, ejecutaremos las migraciones para que se nos creen todas las tablas con sus respectivos campos y relaciones con el siguiente comando.
+```
+php artisan migrate
+```
+Si vamos a nuestra base de datos nos daremos cuenta qué ya no está vacía.
