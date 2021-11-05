@@ -1,7 +1,8 @@
 # Conexión y configuración Base de datos 
 
-### Creación de la base de datos
-Lo primero que necesitamos es inicializar XAMPP para ello abrimos la aplicación instalada en el capitulo anterior y iniciamos apche y mysql:
+
+### Creación de base de datos
+Lo primero que necesitamos es inicializar XAMPP para ello abrimos la aplicación instalada en el capítulo anterior y iniciamos apche y mysql:
 
 <img :src="$withBase('/img/xampp.jpg')">
 
@@ -16,7 +17,8 @@ Ahora creamos una nueva base de datos vacía con el nombre que ustedes quieran.
 
 ### Conexión con la base de datos
 
-Para establecer la conexión con nuestra base de datos es muy facil, basta con ubicar el archivo que se crea por defecto con la instalación de Laravel que está en la raíz del proyecto llamado  <b>.env</b> 
+Para establecer la conexión con nuesra base de datos es muy fácil basta con ubicar el archivo que se crea por defecto con la instalacion de laravel que esta en la raíz del proyecto llamado  <b>.env</b> 
+
 
 Si no se te creo ese archivo, debe haber uno llamado <b>.env.example</b> el cual le cambiaremos el nombre a solo .env
 

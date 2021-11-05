@@ -16,6 +16,7 @@ Tenemos 2 formas de crear nuestra aplicación con Composer.
     laravel new mi-api
 ```
 
+
 Con esto, ya hemos creado nuestra aplicación Laravel y ya la podemos abrir en nuestro editor de codigos;
 
 <img :src="$withBase('/img/project.png')">
