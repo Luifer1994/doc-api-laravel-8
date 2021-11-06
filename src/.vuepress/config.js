@@ -21,6 +21,7 @@ module.exports = {
             '/instalacion/',
             '/basedatos/',
             '/modelos/',
+            '/seeder-factory-faker/',
         ]
     },
 
