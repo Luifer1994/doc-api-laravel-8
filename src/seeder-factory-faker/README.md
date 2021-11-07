@@ -4,7 +4,7 @@
 
 Los seeders no son más que componentes del framework Laravel que sirven para inicializar las tablas con datos. Así como las migraciones nos permiten especificar el esquema de la base de datos, los seeders nos permiten también por medio de código alimentar las tablas con datos.
 
-Una seeder sólo contiene un método por defecto: run. Este método se llama cuando se ejecuta el db:seed comando Artisan. Dentro del runmétodo, puede insertar datos en su base de datos como desee. Puede usar el generador de consultas para insertar datos manualmente o puede usar las fábricas de modelos Eloquent.
+Una seeder sólo contiene un método por defecto: **run**. Este método se llama cuando se ejecuta el **db:seed** comando Artisan. Dentro del runmétodo, puede insertar datos en su base de datos como desee. Puede usar el generador de consultas para insertar datos manualmente o puede usar las fábricas de modelos Eloquent.
 
 #### Ejemplo:
 
@@ -82,10 +82,10 @@ A través de la faker propiedad, los factories tienen acceso a la biblioteca PHP
 
 ### Creando Usuario, Mascotas y Generos con Factory
 
-En los capítulos anteriores cuando creamos nuestro modelos tambien habiamos creado el factory de cada uno de ellos, ahora configuremos estas clases para llenar nuestra base de datos.
+En los capítulos anteriores cuando creamos nuestro modelos tambien habíamos creado el factory de cada uno de ellos, ahora configuremos estas clases para llenar nuestra base de datos.
 
 #### UserFactory
-Este factory ya viene por defecto en Laravel pero nosotros modificaremos sun datos para crear un usuario personalizado, nuestro metodo definition quedara de la siguiente manera:
+Este factory ya viene por defecto en Laravel, pero nosotros modificaremos sun datos para crear un usuario personalizado, nuestro método definition quedara de la siguiente manera:
 
 ```php
  public function definition()
@@ -134,7 +134,7 @@ Ya hemos llenado los datos de nuestro Factory ahora paseremos a llamarlos desde 
          \App\Models\Pet::factory(20)->create();
     }
 ```
-Por ultimo corramos de nuevo nuestras migraciones junto con los seeders y luego revisemos las tablas de la base de datos y ya estarán 1 usuario, 2 generos y 20 mascotas.
+Por último, corramos de nuevo nuestras migraciones junto con los seeders y luego revisemos las tablas de la base de datos, y ya estarán 1 usuario, 2 generos y 20 mascotas.
 
 ```
 php artisan migrate:fresh --seed
