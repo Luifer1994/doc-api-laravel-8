@@ -17,7 +17,7 @@ Tenemos 2 formas de crear nuestra aplicación con Composer.
 ```
 
 
-Con esto, ya hemos creado nuestra aplicación Laravel y ya la podemos abrir en nuestro editor de codigos;
+Con esto, ya hemos creado nuestra aplicación Laravel y ya la podemos abrir en nuestro editor de códigos;
 
 <img :src="$withBase('/img/project.png')">
 

@@ -3,16 +3,16 @@
 ### Controladores
 Los controladores son un mecanismo que nos permite agrupar la lógica de peticiones HTTP relacionadas y de esta forma organizar mejor nuestro código.
 
-En lugar de definir toda la lógica para la gestión de una petición dentro de Closures o funciones anónimas en los archivos de rutas, se puede organizar este comportamiento en unas clases llamadas Controladores (controllers). Los controladores pueden agrupar la lógica de gestión de peticiones relacionadas en una única clase. Estos controladores se encuentran normalmente en el directorio app/Http/Controllers.
+En lugar de definir toda la lógica para la gestión de una petición dentro de Closures o funciones anónimas en los archivos de rutas, se puede organizar este comportamiento en unas clases llamadas **Controladores (controllers)**. Los controladores pueden agrupar la lógica de gestión de peticiones relacionadas en una única clase. Estos controladores se encuentran normalmente en el directorio **app/Http/Controllers**.
 
 #### GenderController
 
-Crearemos un controlador para todas las solicitudes HTTP relacionadas al modelo de Generos, para ello Laravel nos ofrece el siguiente comando artisan:
+Crearemos un controlador para todas las solicitudes HTTP relacionadas al modelo de Géneros, para ello Laravel nos ofrece el siguiente comando artisan:
 
 ```
 php artisan make:controller GenderController --api
 ```
-agregando el --api nos creara nuestro controlador con todos los metodos necesarios para usar en un CRUD API.
+agregando el **--api** nos creará nuestro controlador con todos los métodos necesarios para usar en un CRUD API.
 
 Ahora abrimos nuestro controlador:
 ```php
@@ -82,7 +82,7 @@ class GenderController extends Controller
 ```
 ### Listar géneros
 
-Ahora configuremos nuestro contrador para listar nuestros generos, para eso utilizaremos el metodo index de nuestro controlador:
+Ahora configuremos nuestro contrador para listar nuestros géneros, para eso utilizaremos el método index de nuestro controlador:
 ```php
 public function index()
     {
@@ -109,7 +109,7 @@ No olvides importar el controlador en nuestro archivo de rutas:
 ```php
 use App\Http\Controllers\GenderController;
 ```
-Ahora si accedemos en el navegador el siguiente enlase obtenemos todos los generos:
+Ahora si accedemos en el navegador al siguiente enlace, obtenemos todos los generos:
 [http://127.0.0.1:8000/api/genders](http://127.0.0.1:8000/api/genders)
 
 <img :src="$withBase('/img/get-generos.png')" style="width:auto">
