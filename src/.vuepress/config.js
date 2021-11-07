@@ -22,6 +22,7 @@ module.exports = {
             '/basedatos/',
             '/modelos/',
             '/seeder-factory-faker/',
+            '/controlador-ruta/',
         ]
     },
 
