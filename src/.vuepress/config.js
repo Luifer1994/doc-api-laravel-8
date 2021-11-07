@@ -21,6 +21,8 @@ module.exports = {
             '/instalacion/',
             '/basedatos/',
             '/modelos/',
+            '/seeder-factory-faker/',
+            '/controlador-ruta/',
         ]
     },
 
