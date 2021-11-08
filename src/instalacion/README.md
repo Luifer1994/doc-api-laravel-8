@@ -19,7 +19,7 @@ Tenemos 2 formas de crear nuestra aplicación con Composer.
 
 Con esto, ya hemos creado nuestra aplicación Laravel y ya la podemos abrir en nuestro editor de códigos;
 
-<img :src="$withBase('/img/project.png')">
+<a href="/doc-api-laravel-8/img/project.png" target="blank"><img :src="$withBase('/img/project.png')"></a>
 
 Para comprobar que todo salio bien, abrimos la terminal dentro de nuestro proyecto y escribimos:
 ```
@@ -27,4 +27,4 @@ Para comprobar que todo salio bien, abrimos la terminal dentro de nuestro proyec
 ```
 Esto nos levantará un servidor local donde se va estar ejecutanto nuestra aplicación, abrimos ese servidor en el navegador y veremos lo siguiente:
 
-<img :src="$withBase('/img/aplicacion.png')">
+<a href="/doc-api-laravel-8/img/aplicacion.png" target="blank"><img :src="$withBase('/img/aplicacion.png')"></a>
