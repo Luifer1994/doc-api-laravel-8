@@ -53,7 +53,7 @@ use App\Http\Controllers\UserController;
 ```
 Ahora necesitaremos un cliente HTTP que nos permita probar nuestra API, podemos usar cualquiera, yo recomiendo [Insomnia](https://insomnia.rest/download); Si mandamos las credenciales de nuestro usuario por medio de [Insomnia](https://insomnia.rest/download) o [Postman](https://www.postman.com/) a la ruta login obtenemos lo siguiente:
 
-<img :src="$withBase('/img/login.png')">
+<a href="/doc-api-laravel-8/img/login.png" target="blank"><img :src="$withBase('/img/login.png')"></a>
 
 Si vemos la imagen ya tenemos nuestro token el cual usaremos para acceder a rutas protegidas.
 <p style="font-size:50px">Genial 👨‍💻🤩</p>
