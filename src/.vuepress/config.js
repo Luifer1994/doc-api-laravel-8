@@ -2,7 +2,7 @@ module.exports = {
     dest: 'docs',
     base: '/doc-api-laravel-8/',
     title: 'API con Laravel 8',
-    description: 'Eta guía le dará un ejemplo de como crear una API Rest conLaravel 8 y Passport',
+    description: 'Esta guía le dará un ejemplo de como crear una API Rest conLaravel 8 y Passport',
     head: [
         ['meta', { name: 'theme-color', content: '#3eaf7c' }],
         ['meta', { name: 'apple-mobile-web-app-capable', content: 'yes' }],
