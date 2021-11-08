@@ -23,6 +23,7 @@ module.exports = {
             '/modelos/',
             '/seeder-factory-faker/',
             '/controlador-ruta/',
+            '/passport/',
         ]
     },
 
