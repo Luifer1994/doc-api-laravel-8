@@ -51,7 +51,7 @@ No olvides importar el controlador dentro del archivo de rutas:
 ```php
 use App\Http\Controllers\UserController;
 ```
-Ahora necesitaremos un cliente HTTP que nos permita probar nuestra API, podemos usar cualquiera yo recomiendo [Insomnia](https://insomnia.rest/download); Si mandamos las credenciales de nuestro usuario por medio de [Insomnia](https://insomnia.rest/download) o [Postman](https://www.postman.com/) a la ruta login obtenemos los siguiente:
+Ahora necesitaremos un cliente HTTP que nos permita probar nuestra API, podemos usar cualquiera yo recomiendo [Insomnia](https://insomnia.rest/download); Si mandamos las credenciales de nuestro usuario por medio de [Insomnia](https://insomnia.rest/download) o [Postman](https://www.postman.com/) a la ruta login obtenemos lo siguiente:
 
 <img :src="$withBase('/img/login.png')">
 
