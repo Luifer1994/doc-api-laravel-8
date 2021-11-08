@@ -24,6 +24,7 @@ module.exports = {
             '/seeder-factory-faker/',
             '/controlador-ruta/',
             '/passport/',
+            '/login/',
         ]
     },
 
