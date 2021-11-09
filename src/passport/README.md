@@ -13,7 +13,7 @@ El proveedor de servicios de Passport registra su propio directorio de migració
 ```
 php artisan migrate
 ```
-A continuación, debe ejecutar el passport:install comando Artisan. Este comando creará las claves de cifrado necesarias para generar tokens de acceso seguro. Además, el comando creará clientes de "acceso personal" y "concesión de contraseña" que se utilizarán para generar tokens de acceso:
+A continuación, debe ejecutar el **passport:install** comando Artisan. Este comando creará las claves de cifrado necesarias para generar tokens de acceso seguro. Además, el comando creará clientes de **"acceso personal"** y **"concesión de contraseña"** que se utilizarán para generar tokens de acceso:
 
 ```
 php artisan passport:install
@@ -35,7 +35,7 @@ class User extends Authenticatable
     use HasApiTokens, HasFactory, Notifiable;
 }
 ```
-A continuación, debe llamar al Passport::routes método dentro del boot método de su <b>App\Providers\AuthServiceProvider</b>. Este método registrará las rutas necesarias para emitir tokens de acceso y revocar tokens de acceso, clientes y tokens de acceso personal:
+A continuación, debe llamar al **Passport::routes** método dentro del boot método de su <b>App\Providers\AuthServiceProvider</b>. Este método registrará las rutas necesarias para emitir tokens de acceso y revocar tokens de acceso, clientes y tokens de acceso personal:
 
 ```php
  public function boot()
@@ -62,4 +62,4 @@ Finalmente, en el <b>config/auth.php</b> archivo de configuración de su aplicac
     ],
 ],
 ```
-Listo con esto ya tenemos Passport configurado y listo para generar Tokens de accesos.
+¡Listo!, con esto ya tenemos Passport configurado y listo para generar Tokens de accesos.
