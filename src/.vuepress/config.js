@@ -25,6 +25,7 @@ module.exports = {
             '/controlador-ruta/',
             '/passport/',
             '/login/',
+            '/rutas-protegidas/',
         ]
     },
 
