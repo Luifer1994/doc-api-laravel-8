@@ -26,6 +26,7 @@ module.exports = {
             '/passport/',
             '/login/',
             '/rutas-protegidas/',
+            '/cerrar-sesion/',
         ]
     },
 
