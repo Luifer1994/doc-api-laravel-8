@@ -2,11 +2,11 @@
 
 ### Registrar
 
-Para registrar un nuevo género crearemos una nueva ruta en nuestro [***grupo de rutas protegidas***](/rutas-protegidas/) que apunte al método store del controlador ***GenderController*** y de tipo POST:
+Para registrar un nuevo género crearemos una nueva ruta en nuestro [***grupo de rutas protegidas***](/rutas-protegidas/) que apunte al método **store** del controlador ***GenderController*** y de tipo POST:
 ```php
 Route::post('/genders/add', [GenderController::class, 'store']);//Registrar
 ```
-Ahora configuraremos el metodo store de ***GenderController*** de la siguinte manera:
+Ahora configuraremos el método store de ***GenderController*** de la siguinte manera:
 ```php
 public function store(Request $request)
     {
@@ -38,17 +38,19 @@ public function store(Request $request)
         }
     }
 ```
-Con esto ya nuestra API esta lista para registrar un nuevo género, para registrar un nuevo genero mandaremos desde el ciente HTTP un JSON con una llave ***name*** y el valor sera el nombre del género a registrar a la ruta creada:
+Con esto ya nuestra API está lista para registrar un nuevo género, para registrar un nuevo género mandaremos desde el ciente HTTP un JSON con una llave ***name*** y el valor será el nombre del género a registrar a la ruta creada:
+
 <a href="/doc-api-laravel-8/img/registro-genero.png" target="blank"><img :src="$withBase('/img/registro-genero.png')"></a> 
 Ahora si listamos nuestros géneros vemos que ya tenemos el nuevo registro:
+
 <a href="/doc-api-laravel-8/img/listar-nuevo-genero.png" target="blank"><img :src="$withBase('/img/listar-nuevo-genero.png')"></a> 
 
 ### Actualizar
-Para actualizar un género existente crearemos una nueva ruta en nuestro [***grupo de rutas protegidas***](/rutas-protegidas/) que apunte al método update del controlador ***GenderController*** pasando como parametro el id del género a actualizar, esta ruta sera de tipo PUT:
+Para actualizar un género existente crearemos una nueva ruta en nuestro [***grupo de rutas protegidas***](/rutas-protegidas/) que apunte al método **update** del controlador ***GenderController*** pasando como parámetro el id del género a actualizar, esta ruta será de tipo **PUT**:
 ```php
  Route::put('/genders/update/{id}', [GenderController::class, 'update']);//Actualizar
 ```
-Nuestro metodo update dentro del controlador quedará de la siguiente manera:
+Nuestro método update dentro del controlador quedará de la siguiente manera:
 ```php
 public function update(Request $request, $id)
     {
@@ -88,12 +90,14 @@ public function update(Request $request, $id)
         }
     }
 ```
-Para actualizar un género consumimos este EndPoint desde el cliente HTTP y pasamos por URL el id del género a actualizar y por JSON el nuevo valor de la siguiente manera:
+Para actualizar un género, consumimos este EndPoint desde el cliente HTTP y pasamos por URL el id del género a actualizar y por JSON el nuevo valor de la siguiente manera:
+
 <a href="/doc-api-laravel-8/img/genero-editado.png" target="blank"><img :src="$withBase('/img/genero-editado.png')"></a>
 Si listamos nuestros géneros vemos el cambio.
 
 ### Eliminar
-Para eliminar un género crearemos una nueva ruta en nuestro [***grupo de rutas protegidas***](/rutas-protegidas/) que apunte al método destroy del controlador ***GenderController*** pasando como parametro el id del género a eliminar, esta ruta sera de tipo DELETE:
+Para eliminar un género, crearemos una nueva ruta en nuestro [***grupo de rutas protegidas***](/rutas-protegidas/) que apunte al método **destroy** del controlador ***GenderController*** pasando como parámetro el id del género a eliminar, esta ruta sera de tipo **DELETE**:
+
 ```PHP
  Route::delete('/genders/delete/{id}', [GenderController::class, 'destroy']);//Eliminar
 ```
@@ -133,10 +137,12 @@ public function destroy($id)
         }
     }
 ```
-Para borrar solo seria mandar el id por URL del género a borrar a la ruta encargada por el metodo DEETE:
+Para borrar solo sería mandar el id por URL del género a borrar a la ruta encargada por el metodo **DEETE**:
+
 <a href="/doc-api-laravel-8/img/borrando-genero.png" target="blank"><img :src="$withBase('/img/borrando-genero.png')"></a>
 
 Al finalizar este capítulo nuestro grupo de rutas debe quedar de la siguiente manera:
+
 ```php
 Route::group(['middleware' => 'auth:api'], function () {
     //Cerrar sesión
@@ -150,5 +156,5 @@ Route::group(['middleware' => 'auth:api'], function () {
 ```
 
 
-<p style="background-color: coral; border-radius: 25px; padding:10px">NOTA: Recuerda que todas estas rutas son protegidas y no podras acceder a ellas sin enviar un token valido</p>
+<p style="background-color: coral; border-radius: 25px; padding:10px">NOTA: Recuerda que todas estas rutas son protegidas, y no podrás acceder a ellas sin enviar un token válido</p>
 <p style="font-size:50px">Onfire🔥</p>
