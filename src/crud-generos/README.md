@@ -38,6 +38,10 @@ public function store(Request $request)
         }
     }
 ```
+No olvides importar el facade Validator en nuestro controlador:
+```php
+use Illuminate\Support\Facades\Validator;
+```
 Con esto ya nuestra API está lista para registrar un nuevo género, para registrar un nuevo género mandaremos desde el ciente HTTP un JSON con una llave ***name*** y el valor será el nombre del género a registrar a la ruta creada:
 
 <a href="/doc-api-laravel-8/img/registro-genero.png" target="blank"><img :src="$withBase('/img/registro-genero.png')"></a> 
