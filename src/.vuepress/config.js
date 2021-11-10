@@ -27,6 +27,7 @@ module.exports = {
             '/login/',
             '/rutas-protegidas/',
             '/cerrar-sesion/',
+            '/crud-generos/',
         ]
     },
 
