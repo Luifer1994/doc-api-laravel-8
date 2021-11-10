@@ -137,7 +137,7 @@ public function destroy($id)
         }
     }
 ```
-Para borrar solo sería mandar el id por URL del género a borrar a la ruta encargada por el metodo **DEETE**:
+Para borrar solo sería mandar el id por URL del género a borrar a la ruta encargada por el metodo **DELETE**:
 
 <a href="/doc-api-laravel-8/img/borrando-genero.png" target="blank"><img :src="$withBase('/img/borrando-genero.png')"></a>
 
