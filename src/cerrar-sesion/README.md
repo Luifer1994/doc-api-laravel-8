@@ -16,6 +16,13 @@ Para cerrar sesión solo basta con destruir el token generado con passport de nu
         ],200);
     }
 ```
+
+Recuerda colocar  la clase de autenticación:
+
+```php
+use Illuminate\Support\Facades\Auth;
+```
+
 ### Ruta logout
 Ahora crearemos una ruta la cual llame a esta función de nuestro controlador, esta ruta también será protegida, ya que no podemos cerrar sesión si no existe ninguna sesión activa:
 

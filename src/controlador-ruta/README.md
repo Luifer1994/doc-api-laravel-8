@@ -101,7 +101,7 @@ use App\Models\Gender;
 ### Rutas
 Las rutas de Laravel más básicas aceptan un URI y un cierre, proporcionando un método muy simple y expresivo para definir rutas y comportamientos sin complicados archivos de configuración de enrutamiento.
 
-Crearemos nuestra primer ruta para listar los géneros:
+Crearemos nuestra primer ruta para listar los géneros en nuestro archivo de rutas de la API **routes/api.php**:
 ```php
 Route::get('/genders', [GenderController::class, 'index']);
 ```

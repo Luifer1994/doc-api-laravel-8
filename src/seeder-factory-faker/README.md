@@ -49,7 +49,7 @@ Esto nos creará un nuevo usuario en la base de datos.
 
 Por supuesto, especificar manualmente los atributos para cada seeder de modelo es engorroso. En su lugar, puede utilizar los factories para generar de forma conveniente grandes cantidades de registros de bases de datos. Primero, revise la [documentación](https://laravel.com/docs/8.x/database-testing#defining-model-factories) de los factories para aprender cómo definir sus factories.
 
-Para ver un ejemplo de cómo escribir un factory, eche un vistazo al <b>database/factories/UserFactory.phparchivo</b> en su aplicación. Este factory se incluye con todas las nuevas aplicaciones de Laravel y contiene la siguiente definición:
+Para ver un ejemplo de cómo escribir un factory, eche un vistazo al <b>database/factories/UserFactory.php</b> archivo en su aplicación. Este factory se incluye con todas las nuevas aplicaciones de Laravel y contiene la siguiente definición:
 
 ```php
 namespace Database\Factories;
