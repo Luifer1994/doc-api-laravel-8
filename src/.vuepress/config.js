@@ -28,6 +28,7 @@ module.exports = {
             '/rutas-protegidas/',
             '/cerrar-sesion/',
             '/crud-generos/',
+            '/crud-mascotas/',
         ]
     },
 
